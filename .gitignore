@@ -1,0 +1,39 @@
+# FieldFox MATLAB suite - keep source, small data and calibrations; leave out
+# large downloads, caches, run outputs and editor files.
+
+# MATLAB editor autosave files
+*.asv
+
+# Large downloads (ITU-R P.618 maps, 337 MB: see README to re-download)
+support/p618/
+
+# Downloaded catalogues and orbit data (re-fetched and cached automatically)
+support/tle/
+support/satsig/tle/
+support/tracker/tle/
+support/satsig/satnogs/
+support/survey/satnogs_transmitters.json
+
+# Simulation caches (rebuilt automatically)
+support/antenna/cache/
+support/linksim/linksim_cache.mat
+
+# Work in progress (tools whose build was interrupted; committed when finished)
+ff_antenna_sim.m
+ff_sat_acm.m
+support/antenna/
+support/acm/
+
+# Run outputs written into this folder by the tools
+results/
+cubesat_link_*/
+srs4_ambient/
+survey_*/
+emi_study_*/
+linksim_*/
+ntn5g_*/
+satsig_*/
+ff_satsig_*.mat
+ff_spectrum_pro_*
+fieldfox_rec_*.mat
+fieldfox_snap_*

@@ -1,0 +1,61 @@
+Name,FLow_Hz,FHigh_Hz,Service,Kind,Duplex,Holder,Expect,Conf,Note
+AM MW broadcast,526500,1606500,Broadcast,broadcast_am,-,various,CW|AM,high,"Region 3, 9 kHz raster"
+ISM 6.78 MHz,6765000,6795000,ISM,ism,-,-,,high,ITU RR 5.138
+ISM 13.56 MHz (NFC/RFID),13553000,13567000,ISM,ism,-,-,,high,
+ISM 27.12 MHz,26957000,27283000,ISM,ism,-,-,,high,
+ISM 40.68 MHz,40660000,40700000,ISM,ism,-,-,,high,
+CB 78 MHz (Thai),78000000,78987500,Land mobile (CB),landmobile,-,public,CW|FM,med,80 ch x 12.5 kHz
+FM broadcast,87500000,108000000,Broadcast,broadcast_fm,-,various,FM,high,
+VOR/ILS localizer,108000000,117975000,Aero radionav,aero_radionav,-,AEROTHAI,CW,high,
+Air band VHF (AM),117975000,137000000,Aero mobile,aero,-,AEROTHAI,CW|AM,high,121.5 emergency
+MetSat 137-138 MHz,137000000,138000000,Met-satellite / MSS,metsat,DL,Meteor/ORBCOMM,,high,Meteor-M2-3/M2-4 LRPT 137.9 (alt 137.1); ORBCOMM 137.2-137.8; NOAA APT decommissioned 2025
+Amateur 2 m,144000000,146000000,Amateur(+sat),amateur,-,amateur,CW|FM,med,145.8-146 amateur-sat; 145.825 KNACKSAT-2 APRS
+Marine VHF,156000000,162025000,Maritime mobile,maritime,-,marine,CW|FM,high,Ch16 156.8; AIS 161.975/162.025
+CB 245 MHz (Thai),245000000,246000000,Land mobile (CB),landmobile,-,public,CW|FM,med,80 ch
+ILS glide path,328600000,335400000,Aero radionav,aero_radionav,-,AEROTHAI,CW,high,
+Space ops / MetSat 400.15-401 MHz,400150000,401000000,Space ops / MetSat,spaceops,DL,-,,med,KNACKSAT-2 TLM 400.630 (not amateur)
+Space research / MetSat 401-406 MHz,401000000,406000000,Space ops / MetSat,spaceops,-,-,,med,NAPA-1 401.125; radiosondes 402-406
+COSPAS-SARSAT,406000000,406100000,Distress,distress,UL,-,,high,
+Amateur 70 cm,430000000,440000000,Amateur(+sat),amateur,-,amateur,CW|FM,med,
+Amateur-satellite 435-438 MHz,435000000,438000000,Amateur-satellite,amateur_sat,-,amateur,CW|FM,med,OrigamiSat-2 437.505; ISS 437.800/437.825
+SRD 433 MHz,433050000,434790000,SRD,srd,-,-,,med,low-power devices
+DTV DVB-T2,470000000,694000000,Broadcast,broadcast_tv,-,MUX operators,DVB-T2,high,moved from 510-790 MHz in 2020-21
+IMT700 B28/n28 UL,703000000,748000000,IMT,imt_fdd_ul,UL,True|AIS|NT,LTE|NR,high,APT 700 FDD uplink
+IMT700 B28/n28 DL True,758000000,778000000,IMT,imt_fdd_dl,DL,True,LTE|NR,med,2x20 (703-723/758-778)
+IMT700 B28/n28 DL AIS,778000000,798000000,IMT,imt_fdd_dl,DL,AIS,LTE|NR,med,2x20 incl. 738-743/793-798 from NT
+IMT700 B28/n28 DL NT,798000000,803000000,IMT,imt_fdd_dl,DL,NT,LTE|NR,low,remaining NT 2x5 (inferred)
+850 B5 UL,824000000,839000000,IMT,imt_fdd_ul,UL,(unassigned?),LTE|NR,med,NT licence ended Aug 2025; unsold in 2025 auction
+850 B5 DL,869000000,884000000,IMT,imt_fdd_dl,DL,(unassigned?),LTE|NR,med,
+900 B8 UL,890000000,915000000,IMT,imt_fdd_ul,UL,AIS|True,LTE|NR|GSM,med,"AIS 2x10, True-dtac 2x15"
+IoT/RFID 920-925 MHz,920000000,925000000,SRD/IoT,srd,-,-,,high,NBTC TS 1033-2560; LoRaWAN AS923
+900 B8 DL,935000000,960000000,IMT,imt_fdd_dl,DL,AIS|True,LTE|NR|GSM,med,
+DME/SSR/ADS-B,960000000,1164000000,Aero radionav,aero_radionav,-,AEROTHAI,CW,high,SSR 1030 up / 1090 down
+GNSS L5/E5/B2,1164000000,1215000000,RNSS,rnss,DL,-,,high,GNSS is below the FieldFox noise floor
+GNSS L2/E6/B3,1215000000,1300000000,RNSS,rnss,DL,-,,high,GNSS is below the FieldFox noise floor
+L-band 1500 True (SDL),1452000000,1472000000,IMT,imt_sdl,DL,True,LTE|NR,high,won 2025; B32/n75 SDL range
+MSS L-band DL (Inmarsat/Thuraya),1518000000,1559000000,MSS,mss,DL,Inmarsat etc.,,high,
+GNSS L1/E1/B1/G1,1559000000,1610000000,RNSS,rnss,DL,-,,high,1575.42; GNSS is below the FieldFox noise floor
+MSS L-band UL / Iridium,1610000000,1660500000,MSS,mss,UL,Iridium/Inmarsat,,high,Iridium 1616-1626.5 (bidirectional)
+MetSat 1690-1710 MHz,1690000000,1710000000,Met-satellite,metsat,DL,GK-2A/FY/Metop,,high,GK-2A LRIT 1692.14; HRPT 1698-1707
+1800 B3 UL,1710000000,1785000000,IMT,imt_fdd_ul,UL,AIS|True,LTE|NR|GSM,med,"AIS 2x20, True-dtac 2x20"
+1800 B3 DL,1805000000,1880000000,IMT,imt_fdd_dl,DL,AIS|True,LTE|NR|GSM,med,
+2100 B1/n1 UL,1920000000,1980000000,IMT,imt_fdd_ul,UL,True|AIS,LTE|NR,med,AIS 1965-1980 (2025)
+S-band space ops UL,2025000000,2110000000,Space ops/EESS,spaceops,UL,-,,high,
+2100 B1/n1 DL True-dtac,2110000000,2140000000,IMT,imt_fdd_dl,DL,True,LTE|NR,low,2x30 (block edges inferred)
+2100 B1/n1 DL AIS,2140000000,2170000000,IMT,imt_fdd_dl,DL,AIS,LTE|NR,med,2155-2170 won 2025; 2140-2155 inferred
+S-band space ops DL,2200000000,2290000000,Space ops/EESS,spaceops,DL,-,,high,SRS-4 TX 2200-2290
+2300 B40/n40 True TDD,2300000000,2370000000,IMT,imt_tdd,TDD,True,LTE|NR,high,won 2025 (7 x 10 MHz)
+Amateur 13 cm (ISS HamTV 2395),2370000000,2400000000,Amateur(+sat),amateur_sat,-,amateur,,low,ISS HamTV DVB-S 2395 MHz
+ISM 2.4 GHz / Wi-Fi / Bluetooth,2400000000,2483500000,ISM/RLAN,ism,-,-,Wi-Fi|BLE|Bluetooth|CW,high,
+Globalstar DL,2483500000,2500000000,MSS,mss,DL,Globalstar,,high,
+2600 n41 AIS TDD,2500000000,2600000000,IMT,imt_tdd,TDD,AIS,NR|LTE,high,2020 auction
+2600 n41 True TDD,2600000000,2690000000,IMT,imt_tdd,TDD,True,NR|LTE,med,90 MHz (remaining part of 2500-2690)
+S-band radar (ATC/WX),2700000000,2900000000,Radiolocation,radiolocation,-,AEROTHAI/TMD,,high,pulsed
+Maritime radar S-band,2900000000,3100000000,Radionav,radiolocation,-,marine,,high,pulsed
+C-band FSS DL / IMT candidate,3300000000,4200000000,FSS/IMT,fss,DL,Thaicom/TVRO,NR,med,IMT 3300-3700 auction planned 2027
+Radio altimeters,4200000000,4400000000,Aero radionav,aero_radionav,-,-,,high,
+Wi-Fi 5 GHz low,5150000000,5350000000,RLAN,rlan,-,-,Wi-Fi,med,
+Wi-Fi 5 GHz mid,5470000000,5725000000,RLAN,rlan,-,-,Wi-Fi,med,5600-5650 weather radar inside
+Wi-Fi/ISM 5.8 GHz,5725000000,5850000000,ISM/RLAN,ism,-,-,Wi-Fi|CW,med,
+Amateur-satellite 5830-5850 MHz,5830000000,5850000000,Amateur-satellite,amateur_sat,DL,amateur,,med,OrigamiSat-2 C-band 5840 MHz (needs a dish)
+Wi-Fi 6E lower 6 GHz,5925000000,6425000000,RLAN / FSS UL,rlan,-,-,Wi-Fi,med,draft 250 mW indoor / 25 mW outdoor
